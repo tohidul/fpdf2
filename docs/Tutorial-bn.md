@@ -21,11 +21,11 @@ Methods full documentation: [`fpdf.FPDF` API doc](https://pyfpdf.github.io/fpdf2
 pdf = FPDF(orientation="P", unit="mm", format="A4")
 ```
 
-It is possible to set the PDF in landscape mode (`L`) or to use other page formats
-(such as `Letter` and `Legal`) and measure units (`pt`, `cm`, `in`).
+আমরা যদি PDF landscape মোডে চাই তাহলে orientation এর ভ্যালু (`L`) সেট করতে হবে অথবা যদি অন্য কোন পেইজ ফরম্যাট চাই
+তাহলে format এর ভ্যালু পরিবর্তন করতে হবে (যেমন `Letter` এবং `Legal`) measure units গুলোকে পরিবর্তন করতে পারি unit ভ্যালু পরিবর্তন করে (`pt`, `cm`, `in`).
 
-There is no page for the moment, so we have to add one with 
-[add_page](fpdf/fpdf.html#fpdf.fpdf.FPDF.add_page). The origin is at the upper-left corner and the
+বর্তমান উদাহরণে কোন পেইজ নেই তাই পেইজ যুক্ত করার জন্য আমাদেরকে 
+[add_page](fpdf/fpdf.html#fpdf.fpdf.FPDF.add_page). ফাংশনটি ব্যাবহার করতে হবে।
 current position is by default placed at 1 cm from the borders; the margins can
 be changed with [set_margins](fpdf/fpdf.html#fpdf.fpdf.FPDF.set_margins).
 
